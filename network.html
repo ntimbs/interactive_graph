@@ -5,19 +5,23 @@
 <script type="application/json" id="graph-data">
 {
   "nodes": [
-    { "id": "A", "group": "People", "label": "Alice" },
-    { "id": "B", "group": "People", "label": "Bob" },
-    { "id": "C", "group": "Topics", "label": "NDCG" },
-    { "id": "D", "group": "Topics", "label": "mAP" },
-    { "id": "E", "group": "Topics", "label": "MMR" }
+    { "id": "A", "group": "People", "label": "Nathan" },
+    { "id": "B", "group": "Topics", "label": "Rebel Governance" },
+    { "id": "C", "group": "Topics", "label": "Civil Conflict" },
+    { "id": "D", "group": "Topics", "label": "Human Rights" },
+    { "id": "E", "group": "Topics", "label": "Climate Change" }
   ],
   "links": [
-    { "source": "A", "target": "C", "weight": 1 },
-    { "source": "A", "target": "D", "weight": 2 },
+    { "source": "A", "target": "B", "weight": 3 },
+    { "source": "A", "target": "C", "weight": 3 },
+    { "source": "A", "target": "D", "weight": 1 },
+    { "source": "A", "target": "E", "weight": 2 },
     { "source": "B", "target": "C", "weight": 3 },
+    { "source": "B", "target": "D", "weight": 2 },
     { "source": "B", "target": "E", "weight": 1 },
-    { "source": "C", "target": "D", "weight": 2 },
-    { "source": "C", "target": "E", "weight": 1 }
+    { "source": "C", "target": "D", "weight": 3 },
+    { "source": "C", "target": "E", "weight": 2 },
+    { "source": "D", "target": "E", "weight": 3 },
   ]
 }
 </script>
